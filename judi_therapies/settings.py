@@ -76,12 +76,15 @@ TEMPLATES = [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',  # required by allauth
                 'django.contrib.auth.context_processors.auth',
+                'django.template.context_processors.media',
                 'django.contrib.messages.context_processors.messages',
                 'bag.contexts.bag_contents',
             ],
         },
     },
 ]
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
