@@ -9,7 +9,7 @@ def profile(request):
 
     template = 'profiles/profile.html'
     context = {
-        'profile', profile,
+        'profile': profile,
     }
 
     return render(request, template, context)
