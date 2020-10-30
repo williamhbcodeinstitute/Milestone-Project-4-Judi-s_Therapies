@@ -7,6 +7,7 @@ from checkout.webhook_handler import StripeWH_Handler
 
 import stripe
 
+
 @require_POST
 @csrf_exempt
 def webhook(request):
@@ -19,16 +20,18 @@ def webhook(request):
     payload = request.body
     sig_header = request.META['HTTP_STRIPE_SIGNATURE']
     event = None
-
+    print("webhook request successfuly running")
     try:
         event = stripe.Webhook.construct_event(
-        payload, sig_header, wh_secret
+        payload, sig_header, wh_secret,
         )
     except ValueError as e:
         # Invalid payload
+        print("webhook request successfuly running2")
         return HttpResponse(status=400)
     except stripe.error.SignatureVerificationError as e:
         # Invalid signature
+        print("webhook request successfuly running3")
         return HttpResponse(status=400)
     except Exception as e:
         return HttpResponse(content=e, status=400)
@@ -44,6 +47,7 @@ def webhook(request):
 
     # Get the webhook type from Stripe
     event_type = event['type']
+    print(f"event type{event_type}")
 
     # If there's a handler for it, get it from the event map
     # Use the generic one by default
