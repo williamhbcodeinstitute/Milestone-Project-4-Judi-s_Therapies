@@ -1,0 +1,1 @@
+web: gunicorn judi_therapies.wsgi:application
