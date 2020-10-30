@@ -27,7 +27,7 @@ SECRET_KEY = '5x=0scvrtl#fat5(q_p!h!mbtz!zlf2pze678^k6ri90^*wi=b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['whb91-judi-therapies.herokuapp.com', 'localhost']
 
 
 # Application definition
