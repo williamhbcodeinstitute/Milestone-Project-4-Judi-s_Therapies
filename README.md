@@ -61,8 +61,15 @@ the website to flow.
 ## Testing
 ________________________
 
-* For testing I have gone through the whole process of working the flow of registering, logging in, adding item 
-to bag, updating the bag to then secure checkout. I have tested this with my Mentor aswell to show the flow and functionality of the site.
+
+1. click the 'my account' link in the top right hand corner of the nav bar then click register in the drop down menu.
+2. This will take you to the registeration page where you can fill out the information fields required to start an account.
+3. Once signed in you can navigate through the store via the main nav links so you can view all products on the site. You can also do this through the search bar at the very top of the site aswell.
+4. Then you can add items to your shopping bag by clicking an item and then clicking the 'add to bad' button.
+5. After clicking 'add to bag' a toast will appear saying 'secure checkout'
+6. This will take you to the secure checkout page where you can then add in your checkout information such as name, address and card details which are handled by STRIPE.
+7. After filling out the details and submitting another toast will appear telling your order information and that an email has been sent to the accounts email address.
+8. To navigate away from this click the 'judi's therapies logo in the top left corner' or any of the other nav links. The 'checkout other deals button bellow takes you to a page that has no products.
 
 * I applied 2 test verification through Google so that emails can be sent to account holders when registering an account on the site. This can be done by making a temp email through 'https://temp-mail.org/' and registering an account.
 
@@ -73,10 +80,10 @@ ________________________
 
 I have deployed my site through github and heroku.
 
-* github-master-branch-link: https://williamhbcodeinstitute.github.io/Milestone-Project-4-Judi-s_Therapies/.
-* github-link: https://github.com/williamhbcodeinstitute/Milestone-Project-4-Judi-s_Therapies
+* github-master-branch-link: (https://williamhbcodeinstitute.github.io/Milestone-Project-4-Judi-s_Therapies/).
+* github-link: (https://github.com/williamhbcodeinstitute/Milestone-Project-4-Judi-s_Therapies)
 
-* Heroku-link: https://whb-judi-therapies.herokuapp.com/
+* Heroku-link: (https://whb-judi-therapies.herokuapp.com/)
 
 ## Heroku Deployment
 ________________________
