@@ -89,12 +89,13 @@ I was able to delpoy to heroku with the following commands:
 * git commit -m ""
 * git push -u heroku master
 
-I began to deploy with AWS webservers but had trouble with change of code used on the servers as
-they had changed from the video tutorials. I did however manage to get the aws buckets linked with my project 
-can find the settings in requirements.txt : botocore==1.19.9 : boto3==1.16.
+* I have deployed my static and media files to the AWS bucket S3   in requirements.txt : botocore==1.19.9 : boto3==1.16.
 
-* I am aware that I need to deploy properly with AWS and also there are settings to do with changing the user accounts passwords,
-but to time constraints this is all I can submit right now.
+* Changed the deployment from SQlite3 to Postgres using python3 manage.py dumpdata products > product_dump.json
+* Followed by python3 manage.py loaddata product_dump
+* This enabled all my media and static files to be shown on Heroku.
+* During deployment I did make the mistake of pushing my Postgres info to github, but using git reset --soft HEAD in the terminal I could revoke the previous push where I had not added Postgres info. Followed by git push origin master --force which pushed everything in sinc.
+
 
 ## Credits
 
@@ -102,7 +103,7 @@ ________________________
 
 ## Media
 
-Images uploaded from my computer.
+Image files stored locally.
 
 
 ## Acknowledgements
