@@ -62,7 +62,9 @@ the website to flow.
 ________________________
 
 * For testing I have gone through the whole process of working the flow of registering, logging in, adding item 
-to bag, updating the bag to then secure checkout. I have tested this with my Mentor aswell to prove the flow and functionality of the site.
+to bag, updating the bag to then secure checkout. I have tested this with my Mentor aswell to show the flow and functionality of the site.
+
+* I applied 2 test verification through Google so that emails can be sent to account holders when registering an account on the site. This can be done by making a temp email through 'https://temp-mail.org/' and registering an account.
 
 * I have also tested the different screen sizing through development tools on the site.
 
